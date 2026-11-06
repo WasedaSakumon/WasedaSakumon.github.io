@@ -209,7 +209,7 @@
         function openSelectedAnswer() {
             const subject = document.getElementById("subject-select").value;
             const number = document.getElementById("number-select").value;
-            const pdfUrl = `answer_${subject}_${number}.pdf`;
+            const pdfUrl = `2026/answer_${subject}_${number}.pdf`;
             window.open(pdfUrl, "_blank");
         }
 
@@ -220,7 +220,7 @@
                 const container = document.getElementById(subject + "-links");
                 for (let i = 1; i <= counts[subject]; i++) {
                     const a = document.createElement("a");
-                    a.href = `answer_${subject}_${i}.pdf`;
+                    a.href = `2026/answer_${subject}_${i}.pdf`;
                     a.target = "_blank";
                     a.textContent = `問題${i}解答`;
                     container.appendChild(a);
